@@ -39,7 +39,7 @@ fetch(url, {
  
 
   return (
-  <div className="flex h-screen justify-center py-5">
+  <div className="flex justify-center py-5">
      
     
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -47,7 +47,7 @@ fetch(url, {
 
              <div class="form-control w-full max-w-xs">
            
-                <input type='text'  placeholder="Add Task" class="input input-bordered w-full max-w-xs"  {...register("Add-Task")} />
+                <input type='text'  placeholder="Add Task" class="input input-bordered w-full max-w-xs"  {...register("AddTask")} />
             
             </div>
              <div class="form-control w-full max-w-xs">

@@ -60,8 +60,8 @@ const Login = () => {
     }
     return (
         <div>
-        <div className='login-container '>
-            <div>
+        <div className='login-container'>
+            <div className=' mb-10 '>
                 <h2 className='form-title text-center text-4xl'>Login</h2>
                 <form className='login-form' onSubmit={handleUserSignIn}>
                     <div className="input-group ms-5">
