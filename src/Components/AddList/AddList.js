@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const Home = () => {
   const { register, handleSubmit,reset } = useForm();
@@ -25,13 +26,17 @@ fetch(url, {
 .then(res =>res.json())
 .then(result =>{
     console.log(result);
+    if (result) {
+        toast('Added successfully')
+    }
+   
   
 })
 /* ======================== */
 
 
 
-
+// toast('Added successfully')
 
 
     reset()

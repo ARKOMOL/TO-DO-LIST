@@ -7,6 +7,7 @@ import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import ToDoList from './Components/AddList/ToDoList';
+import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <div className="App  ">
@@ -30,7 +31,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
       </Routes>
-
+        <ToastContainer/>
      </div>
   );
 }
