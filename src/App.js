@@ -16,18 +16,18 @@ function App() {
     <h3 className="text-xl py-2">Here You Can Write your daily Task</h3>
     <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="addTask" element={
+        <Route path="addTask" element={
           <RequireAuth>
             <Addlist />
           </RequireAuth>
-        } />   */}
-         <Route path="addTask" element={
+        } />  
         
-            <Addlist />
-          
+        <Route path="todolist" element={
+          <RequireAuth>
+            <ToDoList/>
+          </RequireAuth>
         } />
         <Route path="login" element={<Login />} />
-        <Route path="todolist" element={<ToDoList/>} />
         <Route path="signup" element={<SignUp />} />
       </Routes>
 

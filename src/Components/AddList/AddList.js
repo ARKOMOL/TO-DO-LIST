@@ -12,7 +12,8 @@ const Home = () => {
 
 
 
-const url = 'http://localhost:4000/toDoList'
+// const url = 'http://localhost:4000/toDoList'
+const url = 'https://limitless-river-03333.herokuapp.com/toDoList'
 console.log(url);
 fetch(url, {
     method:'POST',

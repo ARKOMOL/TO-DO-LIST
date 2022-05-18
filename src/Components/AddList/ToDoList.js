@@ -15,7 +15,7 @@ const ToDoList = () => {
         const confirm = window.confirm ('Want to delete this item?')
        if (confirm) {
     
-        fetch(`http://localhost:4000/toDoList/${id}`,{
+        fetch(`https://limitless-river-03333.herokuapp.com/toDoList/${id}`,{
             method:'DELETE'
         })
         .then(res =>res.json())

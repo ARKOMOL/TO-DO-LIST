@@ -4,7 +4,7 @@ const UseList = () => {
     const [toDoList,setToDoList] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/toDoList')
+        fetch('https://limitless-river-03333.herokuapp.com/toDoList')
      
         .then(res =>res.json())
         .then(data =>{
